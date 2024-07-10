@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="setup.css" />
+    <title>Dice Game</title>
+</head>
+
+<body>
+    <header>
+        <h1>Dice Game</h1>
+    </header>
+    <main>
+        <section class="rules-section">
+            <h2>Game Rules</h2>
+            <ul>
+                <li>Each turn, a player repeatedly rolls a dice. The player may decide to hold the score and change turn or add up with another roll.</li>
+                <li>If the player rolls a 1, their current score gets zeroed and the other player takes turn.</li>
+                <li>If the player rolls any other number, it is added to their current score and the player's turn continues.</li>
+                <li>If a player chooses to "hold" the current score, their turn total is added to their score and the other player takes turn.</li>
+                <li>The first player to score 100 or more points wins.</li>
+            </ul>
+        </section>
+        <section class="input-section">
+            <h2>Enter Player Details</h2>
+            <form id="player-form" autocomplete="off">
+                <label for="player1-name">Player 1 Name:</label>
+                <input type="text" id="player1-name" name="player1-name" required>
+            
+                <label for="player1-nickname">Player 1 Nickname:</label>
+                <input type="text" id="player1-nickname" name="player1-nickname" required>
+            
+                <label for="player2-name">Player 2 Name:</label>
+                <input type="text" id="player2-name" name="player2-name" required>
+            
+                <label for="player2-nickname">Player 2 Nickname:</label>
+                <input type="text" id="player2-nickname" name="player2-nickname" required>
+            
+                <button type="submit">Start Game</button>
+            </form>
+            
+        </section>
+    </main>
+    <script src="setup.js"></script>
+</body>
+
+</html>
